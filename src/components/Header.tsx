@@ -11,10 +11,7 @@ function Header() {
     <div className="fixed top-0 z-50 w-screen bg-white/50 filter backdrop-blur dark:bg-black/50">
       <div className="container flex items-center justify-between py-6">
         <div className="">
-          <Link
-            href="/"
-            className={`${edu.className} font-extrabold text-yellow-600`}
-          >
+          <Link href="/" className={`font-edu font-extrabold text-yellow-600`}>
             JR
           </Link>
         </div>
