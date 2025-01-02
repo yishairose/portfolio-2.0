@@ -4,7 +4,10 @@ import Link from "next/link";
 import { Edu_AU_VIC_WA_NT_Hand } from "next/font/google";
 import { useContact } from "@/app/context/ContactContext";
 
-const edu = Edu_AU_VIC_WA_NT_Hand({ subsets: ["latin"] });
+const edu = Edu_AU_VIC_WA_NT_Hand({
+  subsets: ["latin"],
+  variable: "--font-edu",
+});
 function Header() {
   const { setOpen } = useContact();
   return (
@@ -13,7 +16,7 @@ function Header() {
         <div className="">
           <Link
             href="/"
-            className={`${edu.className} font-extrabold text-yellow-600`}
+            className={`${edu.variable} font-edu font-extrabold text-yellow-600`}
           >
             JR
           </Link>

@@ -6,6 +6,9 @@ const nextConfig = {
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   // Optionally, add any other Next.js config below
   transpilePackages: ["next-mdx-remote"],
+  images: {
+    domains: ["fonts.googleapis.com", "fonts.gstatic.com"],
+  },
 };
 
 const withMDX = createMDX({

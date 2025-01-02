@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 import typography from "@tailwindcss/typography";
 const svgToDataUri = require("mini-svg-data-uri");
+const { fontFamily } = require("tailwindcss/defaultTheme");
 
 const colors = require("tailwindcss/colors");
 const {
@@ -26,7 +27,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        edu: ["var(--font-edu)"],
+        edu: ["var(--font-edu)", ...fontFamily.sans],
       },
       colors: {
         background: "hsl(var(--background))",
