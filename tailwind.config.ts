@@ -26,7 +26,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        edu: ['"Edu AU VIC WA NT Hand"', "cursive"], // Fallback to cursive
+        edu: ["var(--font-edu)"],
       },
       colors: {
         background: "hsl(var(--background))",
