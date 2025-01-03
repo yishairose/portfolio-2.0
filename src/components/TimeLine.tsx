@@ -12,7 +12,7 @@ export function Timeline({ children }: TimelineProps) {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    // offset: ["start end", "end start"],
+    offset: [-1, 1],
   });
   const progressBarWidth = useTransform(
     scrollYProgress,

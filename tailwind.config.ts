@@ -20,9 +20,11 @@ export default {
       center: true,
       padding: "8rem",
       screens: {
-        lg: "1124px",
-        xl: "1124px",
-        "2xl": "1124px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
       },
     },
     extend: {

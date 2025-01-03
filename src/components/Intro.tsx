@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Intro() {
   return (
-    <section className="mt-44 flex items-center justify-between gap-12">
+    <section className="mt-44 flex flex-col gap-12 md:flex-row md:items-center md:justify-between">
       <div className="flex flex-col gap-16">
         <h1 className={`border-l-8 border-yellow-600 pl-8 text-3xl`}>
           Hi, I&#39;m{" "}
@@ -19,8 +19,10 @@ export default function Intro() {
           className="flex-1 rounded-lg grayscale"
           src="/profile.png"
           alt="Joshua Rose"
-          height={350}
           width={350}
+          height={350}
+          sizes="(max-width: 640px) 100px, (max-width: 1024px) 200px, 100px"
+          priority
         />
       </div>
     </section>
